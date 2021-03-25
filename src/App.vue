@@ -14,11 +14,14 @@
     Valor normal: <strong>{{valorB1}}</strong><p/>
 
     <strong>3 - VALOR TOTAL DA AÇÃO COM PORCENTAGEM DA TAXA:</strong> <br/>
-    Val: <strong style='color:red'>{{valorC}}</strong><p/>
+    Val: <strong style='color:red'>{{valorC}}</strong><br/>
+    Valor normal: <strong>{{valorC1}}</strong><p/>
+
 
     <strong>4 - PREÇO MÉDIO:</strong> <br/>
     Quantidade de ações: <input type="number" v-model.number="num4" placeholder="100"/> <br/>
-    Val: <strong style='color:red'>{{valorD}}</strong><p/>
+    Val: <strong style='color:red'>{{valorD}}</strong><br/>
+    Valor normal: <strong>{{valorD1}}</strong><p/>
 
   </div>
 </template>
@@ -54,21 +57,32 @@ export default {
       const valorRecebido = (this.num1 * 100) / this.num2;
       return valorRecebido;
     },
+
     valorB() {
       const valorRecebido = (this.valorA * this.num3) / 100;
       return this.arredondador(valorRecebido);
     },
     valorB1() {
-      const valorRecebido = (this.valorA * this.num3) / 100;
+      const valorRecebido = (this.valorA1 * this.num3) / 100;
       return valorRecebido;
     },
+
     valorC() {
       const valorRecebido = this.valorB + this.num1;
       return this.arredondador(valorRecebido);
     },
+    valorC1() {
+      const valorRecebido = this.valorB1 + this.num1;
+      return valorRecebido;
+    },
+
     valorD() {
       const valorRecebido = this.valorC / this.num4;
       return this.arredondador(valorRecebido);
+    },
+    valorD1() {
+      const valorRecebido = this.valorC1 / this.num4;
+      return valorRecebido;
     }
   }
 }
