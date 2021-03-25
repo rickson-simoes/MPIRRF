@@ -1,24 +1,16 @@
-# mpirrf
+### mpirrf
 
-## Project setup
+Projeto extremamente simples para verificar a media ponderada de uma planilha de ações onde foi feita diversas compras num mesmo dia. 
+
+Não possui estilização, é apenas um quebra galho para o meu imposto de renda.
+
+## Instalar
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Executar
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
