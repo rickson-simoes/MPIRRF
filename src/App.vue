@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Média Ponderada do Imposto de Renda da Receita Federal</h1>
-    <strong>1 - PORCENTAGEM A SER REMOVIDA DA TAXA TOTAL:</strong> <p/>
+    <strong>1 - PORCENTAGEM A SER REMOVIDA DA TAXA TOTAL:</strong> <br/>
     Valor total da ação: <input type="number" v-model.number="num1" placeholder="1000.00"/> <br/>
     Valor líquido das operações: <input type="number" v-model.number="num2" placeholder="1500.00"/> <br/>
     Valor arredondado: <strong style='color:red'>{{valorA}} %</strong><br/>
