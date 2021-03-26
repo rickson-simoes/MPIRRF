@@ -23,6 +23,10 @@
     Val: <strong style='color:red'>{{valorD}}</strong><br/>
     Valor normal: <strong>{{valorD1}}</strong><p/>
 
+    <p/>
+
+    <h3>Pegar o valor correspondente do número [3] desse programa e faz o mesmo procedimento para ações de outros dias, com isso soma o valor total das ações e divide pela quantidade total de ações (Ex: 5.338,35 / 504) = preço médio = 10,59</h3>
+
   </div>
 </template>
 
